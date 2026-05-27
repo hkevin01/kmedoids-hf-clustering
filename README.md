@@ -140,7 +140,8 @@ flowchart LR
     end
     subgraph Visualisation
         B2 -->|PCA or UMAP| D1[2-D projection N×2]
-        D1 + C2 -->|seaborn scatter| D2[PNG output]
+        C2 -->|cluster colours| D2[PNG output]
+        D1 -->|coordinates| D2
     end
 ```
 
